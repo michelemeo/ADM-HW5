@@ -57,7 +57,7 @@ class Queue:
         
         
     def dequeue(self):
-        self.queue.pop(0)
+        return self.queue.pop(0)
         
         
     def front(self):
@@ -69,7 +69,7 @@ class Queue:
     
     
     def isEmpty(self):
-        if self.size == 0:
+        if self.size() == 0:
             return True
         else:
             return False
