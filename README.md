@@ -1,4 +1,4 @@
-# ADM-HW5
+# ADM-HW5: Explore California and Nevada with graphs
 Repository of the fifth homework for the ADM course by Group #7.  
 Group #7 is composed by:  
 - Nazanin Bagherinejad  
