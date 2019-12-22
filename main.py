@@ -9,6 +9,7 @@ import graph as g
 import func_1 as f1
 import func_2 as f2
 import func_3 as f3
+import func_4 as f4
 
 
 print('\nThe program provides users with information about roads in California and Nevada and has 4 functionalities:\n'
@@ -78,8 +79,6 @@ if f == 1:
     # we run functionality 1 (read func_1.py)
     neig_nodes = f1.neighborhood_BFS(v, type, d, G.neighboors, G.weight_edges)
 
-    # with the following code we print only the subgraph obtained by function1 using networkx library and following
-    # the conditions expressed in the homework text
     s_graph = nx.Graph()
 
     edges = []
@@ -118,7 +117,7 @@ elif f == 2:
     v, d_type = int(inputs[0]), inputs[2]
     sequence = list(map(int, inputs[1][1:-1].split(',')))
 
-    # we run functionality 3 (read func_2.py)
+    # we run functionality 2 (read func_2.py)
     result = f2.func2(v, sequence, d_type, G)
     f2.vis2(result, d_type, G)
     
@@ -132,7 +131,6 @@ elif f == 3:
     # we run functionality 3 (read func_3.py)
     path = f3.Dijkstra_sequence(v, sequence, type, G.neighboors, G.weight_edges)
 
-    # with the following code we print the shortest path
     s_graph = nx.Graph()
 
     s_graph.add_node(v, pos=(G.coord_nodes[v][0], G.coord_nodes[v][1]),
@@ -160,3 +158,14 @@ elif f == 3:
     plt.title('Shortest Route')
     plt.legend()
     plt.show()
+
+elif f == 4:
+    
+    print('Enter in the order the starting node (v), a sequence of nodes (input format: [n1,n2,n3,..]), the distance type ("d", "t" or "n"):')
+    inputs = list(map(str, input().split()))
+    v, d_type = int(inputs[0]), inputs[2]
+    sequence = list(map(int, inputs[1][1:-1].split(',')))
+
+    # we run functionality 4 (read func_4.py)
+    result = f4.func4(v, sequence, d_type, G)
+    f4.vis4(result, d_type, G)
