@@ -155,7 +155,7 @@ elif f == 3:
     nx.draw_networkx_edges(s_graph, nx.get_node_attributes(s_graph, 'pos'),
                            edge_color='blue', width=1, label='shortest path')
 
-    plt.title('Shortest Route')
+    plt.title('Shortest Route from the green node\n to the red node')
     plt.legend()
     plt.show()
 
