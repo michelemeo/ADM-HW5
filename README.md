@@ -1,8 +1,8 @@
 # ADM-HW5
 Repository of the fifth homework for the ADM course by Group #7.  
 Group #7 is composed by:  
-- Nazanin Bagherinejad;  
-- Laura Kerber;  
+- Nazanin Bagherinejad  
+- Laura Kerber  
 - Michele Meo  
 
 ## Repository description
