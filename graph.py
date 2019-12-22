@@ -1,3 +1,4 @@
+# the class to build the graph, as already described in main.py
 class Graph:
 
     def __init__(self):
@@ -45,7 +46,8 @@ class Graph:
                self.coord_nodes[item[0]].append(item[1])
                self.coord_nodes[item[0]].append(item[2]) 
             
-            
+
+# implementation from scratch of the queue data structure, using lists
 class Queue:
     
     def __init__(self):
